@@ -26,20 +26,31 @@ module.exports = {
         pathPrefix: '/docs', // Add route prefix. Optional
         template: './src/templates/Documentation.vue', // Optional
         plugins: [
-          [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+          [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Default', skipInline: true } ]
       ],
       }
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'blog/**/*.md',
+        path: 'blog/posts/**/*.md',
         typeName: 'Post',
         refs: {
           tags: {
             typeName: 'Tag',
             create: true
+          },
+          category: {
+            typeName: 'Category',
+            create: true
           }
+        },
+        remark: {
+          plugins: [
+            [ '@noxify/gridsome-plugin-remark-embed', {
+                'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'Codepen'],
+            }]
+          ]
         }
       }
     },
@@ -54,7 +65,7 @@ module.exports = {
         },
         feedItemOptions: node => ({
           title: node.title,
-          description: node.summary,
+          description: node.description,
           url: 'https://gridsome-portfolio-starter.netlify.com' + node.path,
           author: 'Andre Madarang',
           date: node.date
@@ -73,12 +84,13 @@ module.exports = {
     },
   ],
   templates: {
-    Tag: '/tag/:id'
+    Tag: '/tag/:id',
+    Category: '/category/:id'
   },
   transformers: {
     remark: {
       plugins: [
-        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Default', skipInline: true } ]
       ],
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
