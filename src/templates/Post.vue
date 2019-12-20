@@ -26,6 +26,12 @@
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
       </div>
     </div>
+    <vue-disqus shortname="peoray" :identifier="$page.post.title"></vue-disqus>
+
+    <Newsletter />
+    <div class="mbt">
+      <Bio />
+    </div>
   </Layout>
 </template>
 
@@ -48,7 +54,13 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import Newsletter from '../components/Newsletter';
+import Bio from '../components/Bio';
 export default {
+  components: {
+    Bio,
+    Newsletter
+  },
   metaInfo() {
     return {
       title: this.$page.post.title,
@@ -64,3 +76,8 @@ export default {
 </script>
 
 <style src="../css/github-markdown.css" />
+<style scoped>
+.mbt {
+  margin: 5rem auto !important;
+}
+</style>

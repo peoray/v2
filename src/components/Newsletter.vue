@@ -9,7 +9,12 @@
           only send out an email at the end of every month.
         </p>
 
-        <form action="#">
+        <form
+          action="https://tinyletter.com/peoray"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/peoray', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+        >
           <div class="flex flex-col sm:flex-row">
             <input
               type="email"

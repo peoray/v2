@@ -22,7 +22,7 @@
         </div>
         <div class="flex-1 text-lg sm:text-xl ml-6">
           Join my adventure in discovering everything about web programming and
-          life. Evrything on this site is for you, ad-free
+          life. Everything on this site is for you, ad-free
         </div>
       </div>
 

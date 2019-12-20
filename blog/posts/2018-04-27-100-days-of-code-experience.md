@@ -1,16 +1,17 @@
 ---
-title: "My First #100DaysOfCode Experience"
-description: "My experience completing my first #100DaysOfCode challenge"
+title: 'My First #100DaysOfCode Experience'
+description: 'My experience completing my first #100DaysOfCode challenge'
 date: 2018-04-27
-slug: "/blog/100-days-of-code-experience"
-path: "/blog/100-days-of-code-experience"
+slug: '/blog/100-days-of-code-experience'
+path: '/blog/100-days-of-code-experience'
 published: true
-tags: ["100DaysOfCode"]
+tags: ['100DaysOfCode']
+category: 'Programming'
 ---
 
 ![Code picture](https://res.cloudinary.com/peoray/image/upload/v1557015746/pexels-photo-879109_wmpe8j.jpg)
 
-I completed my #100DaysOfCode challenge on 20th April 2018. In case you are wondering what it is, I wrote an [article](/blog/100-days-of-code-let-s-do-this/) when I started the challenge. The whole idea of the challenge is that you publicly commit to coding every day for 100 days. During this period, my experience has both been overwhelming and underwhelming. In this article, I hope to highlight my experience and also to offer advice to others doing it to make it more effective and gain the best out of it.
+I completed my #100DaysOfCode challenge on 20th April 2018. In case you are wondering what it is, I wrote an [article](/blog/100-days-of-code/) when I started the challenge. The whole idea of the challenge is that you publicly commit to coding every day for 100 days. During this period, my experience has both been overwhelming and underwhelming. In this article, I hope to highlight my experience and also to offer advice to others doing it to make it more effective and gain the best out of it.
 
 ## My Journey
 

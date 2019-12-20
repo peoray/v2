@@ -5,12 +5,13 @@ date: 2019-01-05
 published: true
 slug: "/blog/things-I-don't-know"
 path: "/blog/things-I-don't-know"
-tags: ["programming"]
+tags: ['programming']
+category: 'programming'
 ---
 
 I have been writing code for over two years and looking back, it amazes me the number of things I don't know yet. It's a rat-race trying to catch up with the industry, the more you try hard to catch up, the further you realize you are behind. I want to use this opportunity to list out some programming technologies I don't know.
 
-This is kind of a journal for me to see what I don't know as of 2018. This by no means undermines my capabilities as a web developer but only shows I'm humble enough to admit waht I don't know something _yet_
+This is kind of a journal for me to see what I don't know as of 2018. This by no means undermines my capabilities as a web developer but only shows I'm humble enough to admit what I don't know something _yet_
 
 - **Programming Languages:** I know only one programming language, JavaScript. I don't know any other programming languages such as Go, Python, Php, etc.
 

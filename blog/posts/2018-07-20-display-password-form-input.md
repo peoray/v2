@@ -6,7 +6,7 @@ published: true
 slug: '/blog/display-password-form-input'
 path: '/blog/display-password-form-input'
 tags: ['JavaScript']
-category: 'Programming'
+category: 'Web development'
 ---
 
 ![hero image](../images/password/preview.jpg)

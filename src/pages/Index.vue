@@ -49,7 +49,7 @@
     </div>
     <ProjectListing />
 
-    <Bio />
+    <!-- <Bio /> -->
 
     <Contact />
 
@@ -60,12 +60,12 @@
 <script>
 import ProjectListing from '../components/ProjectListing';
 import Newsletter from '../components/Newsletter';
-import Bio from '../components/Bio';
+// import Bio from '../components/Bio';
 import Contact from '../components/Contact';
 export default {
   components: {
     Contact,
-    Bio,
+    // Bio,
     Newsletter,
     ProjectListing
   },

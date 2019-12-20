@@ -1,11 +1,12 @@
 ---
-title: "How to run multiple npm scripts"
-description: "How to use concurrently to run multiple npm scripts with a single script"
+title: 'How to run multiple npm scripts'
+description: 'How to use concurrently to run multiple npm scripts with a single script'
 date: 2019-06-12T12:50:03+01:00
 published: true
-slug: "/blog/using-concurrently"
-path: "/blog/using-concurrently"
-tags: ["npm", "concurrently", "react", "node"]
+slug: '/blog/using-concurrently'
+path: '/blog/using-concurrently'
+tags: ['npm', 'concurrently', 'react', 'node']
+category: 'Web development'
 ---
 
 Nowadays, while building applications with Javascript, you'd need to run different scripts on the terminal. For instance, if you are building a SPA (Single Page Application) with React with a Nodejs API, very often you would need to start the node.js server as well as your React application so you can view it on the browser.
