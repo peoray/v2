@@ -76,7 +76,12 @@ export default {
         name: 'description',
         content:
           'Join my adventure in discovering everything about web programming and life. Everything on this site is for you, ad-free'
-      }
+      },
+      //twitter cards
+      { name="twitter:card", content="summary_large_image" },
+      { name="twitter:description", content='Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist who is passionate about making open-source more accessible and building community, online & offline.'},
+      {name="twitter:title", content='Home - Emmanuel Raymond'},
+      { name="twitter:site", content='peoray-blog.netlify.com'}
     ],
     htmlAttrs: {
       lang: 'en',
