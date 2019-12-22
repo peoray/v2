@@ -6,6 +6,7 @@
 
 const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
+const config = require('./data/siteConfig')
 
 const postcssPlugins = [
   tailwind(),
@@ -14,9 +15,10 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
-  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+  siteName: config.siteTitle,
+  author: config.author,
+  siteDescription: config.siteDescription,
+  siteUrl: config.siteUrl,
   plugins: [
     {
       use: '@gridsome/vue-remark',

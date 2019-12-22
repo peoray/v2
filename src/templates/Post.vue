@@ -24,14 +24,25 @@
       <div class="markdown-body mb-8" v-html="$page.post.content" />
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
+        <!-- <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link> -->
+        <!-- <a
+          :href="githubLink"
+          class="font-bold uppercase"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Edit on Github</a
+        > -->
       </div>
+      <vue-disqus
+        shortname="peoray"
+        :identifier="$page.post.title"
+      ></vue-disqus>
     </div>
-    <vue-disqus shortname="peoray" :identifier="$page.post.title"></vue-disqus>
 
     <Newsletter />
-    <div class="mbt">
+    <!-- <div class="mbt">
       <Bio />
-    </div>
+    </div> -->
   </Layout>
 </template>
 
@@ -56,10 +67,20 @@ query Post ($path: String!) {
 <script>
 import Newsletter from '../components/Newsletter';
 import Bio from '../components/Bio';
+import config from '../../data/siteConfig';
+import editOnGithub from '../utils/helpers';
+// import { editOnGithub } from '../utils/helpers';
 export default {
   components: {
     Bio,
     Newsletter
+  },
+  computed: {
+    githubLink() {
+      const post = $page.post.frontmatter;
+      const githubLink = editOnGithub(post);
+      return githubLink;
+    }
   },
   metaInfo() {
     return {

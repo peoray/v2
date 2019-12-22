@@ -70,7 +70,18 @@ export default {
     ProjectListing
   },
   metaInfo: {
-    title: 'Home'
+    title: 'Home',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Join my adventure in discovering everything about web programming and life. Everything on this site is for you, ad-free'
+      }
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    }
   }
 };
 </script>
