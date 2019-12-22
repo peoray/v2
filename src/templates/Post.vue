@@ -67,8 +67,8 @@ query Post ($path: String!) {
 <script>
 import Newsletter from '../components/Newsletter';
 import Bio from '../components/Bio';
-import config from '../../data/siteConfig';
-import editOnGithub from '../utils/helpers';
+// import config from '../../data/siteConfig';
+// import editOnGithub from '../utils/helpers';
 // import { editOnGithub } from '../utils/helpers';
 export default {
   components: {
@@ -76,11 +76,11 @@ export default {
     Newsletter
   },
   computed: {
-    githubLink() {
-      const post = $page.post.frontmatter;
-      const githubLink = editOnGithub(post);
-      return githubLink;
-    }
+    // githubLink() {
+    //   const post = $page.post.frontmatter;
+    //   const githubLink = editOnGithub(post);
+    //   return githubLink;
+    // }
   },
   metaInfo() {
     return {
