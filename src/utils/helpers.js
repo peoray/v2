@@ -5,7 +5,7 @@ import config from '../../data/siteConfig'
 
 const editOnGithub = post => {
   const date = moment.utc(post.date).format(config.dateFromFormat)
-  return urljoin(config.repo, '/blob/master/content/posts', `${date}-${post.slug}.md`)
+  return urljoin(config.repo, '/blob/master/blog/posts', `${date}-${post.slug}.md`)
 }
 
 // export { editOnGithub }

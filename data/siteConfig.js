@@ -4,7 +4,7 @@ const config = {
   siteDescription: 'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist who is passionate about making open-source more accessible and building community, online & offline.',
   siteUrl: 'https://www.peoray.com',
   userTwitter: '@peoray_',
-  repo: 'https://github.com/peoray/peoray.com',
+  repo: 'https://github.com/peoray/peoray.dev',
   dateFromFormat: 'YYYY-MM-DD',
   dateFormat: 'MMMM Do, YYYY',
   googleAnalyticsID: 'UA-131778153-1',
@@ -50,4 +50,5 @@ const config = {
 // // Make sure siteRss has a starting forward slash
 // if (config.siteRss && config.siteRss[0] !== '/') config.siteRss = `/${config.siteRss}`
 
-module.exports = config
+export default config
+// module.exports = config

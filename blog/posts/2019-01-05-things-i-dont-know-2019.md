@@ -3,10 +3,11 @@ title: "Things I Don't Know as of 2019 (in Programming)"
 description: "List of things I haven't used"
 date: 2019-01-05
 published: true
-slug: "/blog/things-I-don't-know"
+slug: "things-I-don't-know"
 path: "/blog/things-I-don't-know"
 tags: ['programming']
 category: 'programming'
+image: ''
 ---
 
 I have been writing code for over two years and looking back, it amazes me the number of things I don't know yet. It's a rat-race trying to catch up with the industry, the more you try hard to catch up, the further you realize you are behind. I want to use this opportunity to list out some programming technologies I don't know.

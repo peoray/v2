@@ -16,33 +16,20 @@
         </svg>
       </div>
 
-      <ul class="text-lg sm:text-xl">
+      <ul
+        class="text-lg sm:text-xl"
+        v-for="project in projects"
+        :key="project.title"
+      >
         <li class="checkmark mb-6">
-          <div>Project One</div>
+          <div>{{ project.title }}</div>
           <div class="text-lg text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam
-            animi iure nemo exercitationem a, eius non culpa itaque!
+            {{ project.description }}
           </div>
-        </li>
-        <li class="checkmark mb-6">
-          <div>Project Two</div>
-          <div class="text-lg text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam
-            animi iure nemo exercitationem a, eius non culpa itaque!
-          </div>
-        </li>
-        <li class="checkmark mb-6">
-          <div>Project Three</div>
-          <div class="text-lg text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam
-            animi iure nemo exercitationem a, eius non culpa itaque!
-          </div>
-        </li>
-        <li class="checkmark mb-6">
-          <div>Project Four</div>
-          <div class="text-lg text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab nam
-            animi iure nemo exercitationem a, eius non culpa itaque!
+          <div class="mt-2">
+            <a :href="project.source" target="_blank">Github</a>
+            |
+            <a :href="project.path" target="_blank">View</a>
           </div>
         </li>
       </ul>
@@ -50,3 +37,14 @@
     <!-- end projects -->
   </div>
 </template>
+
+<script>
+import projects from '../../data/projects';
+export default {
+  data() {
+    return {
+      projects
+    };
+  }
+};
+</script>

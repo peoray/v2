@@ -20,13 +20,22 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(VueDisqus)
 
   head.meta.push({
+    name: 'viewport',
+    content: 'width=device-width, initial-scale=1.0'
+  })
+
+  head.meta.push({
+    charset: 'UTF-8'
+  })
+
+  head.meta.push({
     name: 'keywords',
     content: 'Vue,React,JavaScript,HTML,CSS,Web Development,Programming'
   })
 
   head.meta.push({
     name: 'description',
-    content: 'Join my adventure in discovering everything about web programming and life. Everything on this site is for you, ad-free'
+    content: 'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist.'
   })
 
   head.meta.push({

@@ -3,10 +3,11 @@ title: 'How to display password in a form input'
 description: 'How to use JavaScript to display or hide a password in a form.'
 date: 2018-07-20
 published: true
-slug: '/blog/display-password-form-input'
+slug: 'display-password-form-input'
 path: '/blog/display-password-form-input'
 tags: ['JavaScript']
 category: 'Web development'
+image: '../images/password/preview.jpg'
 ---
 
 ![hero image](../images/password/preview.jpg)

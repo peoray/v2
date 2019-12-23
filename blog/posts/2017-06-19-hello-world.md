@@ -2,11 +2,12 @@
 title: Hello World
 date: 2017-06-19
 description: 'My very first article :)'
-slug: '/blog/hello-world'
+slug: 'hello-world'
 path: '/blog/hello-world'
 published: true
 tags: ['Blogging']
 category: 'Personal'
+image: '../images/hello-world/hello_world.jpg'
 ---
 
 ![Hello world](../images/hello-world/hello_world.jpg)

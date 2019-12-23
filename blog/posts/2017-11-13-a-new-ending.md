@@ -2,11 +2,12 @@
 title: 'A New Ending'
 description: 'I’m not giving up. I’m just starting over.'
 date: 2017-11-13
-slug: '/blog/a-new-ending'
+slug: 'a-new-ending'
 path: '/blog/a-new-ending'
 published: true
 tags: ['Perseverance']
 category: 'Personal'
+image: '../images/a-new-ending/header.jpg'
 ---
 
 ![Starting over](../images/a-new-ending/header.jpg)

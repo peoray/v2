@@ -6,7 +6,7 @@
 
 const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
-const config = require('./data/siteConfig')
+// const config = require('./data/siteConfig')
 
 const postcssPlugins = [
   tailwind(),
@@ -15,10 +15,10 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: config.siteTitle,
-  author: config.author,
-  siteDescription: config.siteDescription,
-  siteUrl: config.siteUrl,
+  // siteName: config.siteTitle,
+  // author: config.author,
+  // siteDescription: config.siteDescription,
+  // siteUrl: config.siteUrl,
   plugins: [
     {
       use: '@gridsome/vue-remark',
@@ -51,6 +51,7 @@ module.exports = {
           plugins: [
             [ '@noxify/gridsome-plugin-remark-embed', {
                 'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'Codepen'],
+                'Codepen': {height: '584'}
             }]
           ]
         }

@@ -2,11 +2,12 @@
 title: 'My First Day At LearnFactory Nigeria'
 description: 'A Journey to becoming a world-class developer'
 date: 2018-04-30
-slug: '/blog/first-day-at-learnfactory'
+slug: 'first-day-at-learnfactory'
 path: '/blog/first-day-at-learnfactory'
 published: true
 tags: ['Internship', 'learnfactory']
 category: 'Programming'
+image: '../images/learnfactory/preview.jpeg'
 ---
 
 ![Learnfactory group pictures with the interns](../images/learnfactory/preview.jpeg)

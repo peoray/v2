@@ -32,13 +32,13 @@
         class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0"
         :class="isOpen ? 'block' : 'hidden'"
       >
-        <li class="mr-8 mb-6 lg:mb-0">
+        <li class="mr-8 mb-6 lg:mb-0" v-if="$route.path === '/blog'">
           <search-input />
         </li>
         <li class="mr-8 mb-6 lg:mb-0">
           <theme-switcher :theme="theme" @themeChanged="updateTheme" />
         </li>
-        <li class="mr-8 mb-6 lg:mb-0">
+        <!-- <li class="mr-8 mb-6 lg:mb-0">
           <a
             v-if="$route.path === '/'"
             href="/#projects"
@@ -52,8 +52,8 @@
             class="text-copy-primary hover:text-gray-600"
             >Projects</g-link
           >
-        </li>
-        <li class="mr-8 mb-6 lg:mb-0">
+        </li> -->
+        <!-- <li class="mr-8 mb-6 lg:mb-0">
           <a
             v-if="$route.path === '/'"
             href="/#about"
@@ -66,8 +66,8 @@
             to="/#about"
             class="text-copy-primary hover:text-gray-600"
             >About</g-link
-          >
-        </li>
+          > -->
+        <!-- </li>
         <li class="mr-8 mb-6 lg:mb-0">
           <a
             v-if="$route.path === '/'"
@@ -82,12 +82,12 @@
             class="text-copy-primary hover:text-gray-600"
             >Contact</g-link
           >
-        </li>
-        <li class="mr-8 mb-6 lg:mb-0">
+        </li> -->
+        <!-- <li class="mr-8 mb-6 lg:mb-0">
           <g-link to="/docs" class="text-copy-primary hover:text-gray-600"
             >Docs</g-link
           >
-        </li>
+        </li> -->
         <li>
           <g-link to="/blog" class="text-copy-primary hover:text-gray-600"
             >Blog</g-link

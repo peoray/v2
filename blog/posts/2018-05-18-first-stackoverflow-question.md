@@ -3,10 +3,11 @@ title: 'I asked my first StackOverflow question '
 description: 'A first timer’s experience on StackOverflow'
 date: 2018-05-18
 published: true
-slug: '/blog/first-stackoverflow-question'
+slug: 'first-stackoverflow-question'
 path: '/blog/first-stackoverflow-question'
 tags: ['StackOverflow']
 category: 'Programming'
+image: ''
 ---
 
 I asked my first question on StackOverflow today and within minutes, I got answers to my question. Unlike what I read online about difficulties in asking a question, mine was actually easy. Aside from insisting I used a title that describes the question and no one has used before which took few minutes, everything went well.

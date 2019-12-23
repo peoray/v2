@@ -23,15 +23,18 @@
       </div>
       <div class="markdown-body mb-8" v-html="$page.post.content" />
       <div class="mb-8">
-        <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
+        <p>
+          If youIf you found any errors or typos in this article, please feel
+          free to
+          <a
+            :href="githubLink"
+            class="font-bold"
+            target="_blank"
+            rel="noopener noreferrer"
+            >edit on Github</a
+          >.
+        </p>
         <!-- <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link> -->
-        <!-- <a
-          :href="githubLink"
-          class="font-bold uppercase"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Edit on Github</a
-        > -->
       </div>
       <vue-disqus
         shortname="peoray"
@@ -51,6 +54,8 @@ query Post ($path: String!) {
   post: post (path: $path) {
     title
     date (format: "MMMM D, Y")
+    slug
+    image
     content
     tags {
       title
@@ -68,7 +73,7 @@ query Post ($path: String!) {
 import Newsletter from '../components/Newsletter';
 import Bio from '../components/Bio';
 // import config from '../../data/siteConfig';
-// import editOnGithub from '../utils/helpers';
+import editOnGithub from '../utils/helpers';
 // import { editOnGithub } from '../utils/helpers';
 export default {
   components: {
@@ -76,19 +81,86 @@ export default {
     Newsletter
   },
   computed: {
-    // githubLink() {
-    //   const post = $page.post.frontmatter;
-    //   const githubLink = editOnGithub(post);
-    //   return githubLink;
-    // }
+    githubLink() {
+      const post = this.$page.post;
+      const githubLink = editOnGithub(post);
+      return githubLink;
+    }
   },
   metaInfo() {
     return {
       title: this.$page.post.title,
-      link: [
+      titleTemplate: '%s - Blog',
+      script: [
         {
           type: 'text/javascript',
           src: 'https://platform.twitter.com/widgets.js'
+        },
+        {
+          type: 'text/javascript',
+          src: 'https://static.codepen.io/assets/embed/ei.js'
+        }
+      ],
+      meta: [
+        {
+          name: 'description',
+          content: this.$page.post.description
+        },
+        // Twitter meta tags
+        {
+          name: 'twitter:title',
+          content: this.$page.post.title
+        },
+        {
+          name: 'twitter:description',
+          content: this.$page.post.description
+        },
+        {
+          name: 'twitter:creator',
+          content: '@peoray_'
+        },
+        {
+          name: 'twitter:site',
+          content: '@peoray_'
+        },
+        {
+          name: 'twitter:card',
+          content: this.$page.post.image ? 'summary_large_image' : 'summary'
+        },
+        {
+          name: 'twitter:url',
+          content:
+            'https://peoray-blog.netlify.com/blog/' + this.$page.post.path
+        },
+        {
+          name: 'twitter:image',
+          content: this.$page.post.image || ''
+        },
+
+        // Facebook meta tags
+        {
+          property: 'og:title',
+          content: this.$page.post.title
+        },
+        {
+          property: 'og:description',
+          cotent: this.$page.post.description
+        },
+        {
+          property: 'og:url',
+          cotent: 'https://peoray-blog.netlify.com/blog/' + this.$page.post.path
+        },
+        {
+          property: 'og:type',
+          cotent: 'article'
+        },
+        {
+          property: 'og:site_name',
+          cotent: 'Emmanuel Raymond'
+        },
+        {
+          property: 'og:image',
+          content: this.$page.post.image || ''
         }
       ]
     };
@@ -100,5 +172,9 @@ export default {
 <style scoped>
 .mbt {
   margin: 5rem auto !important;
+}
+
+.twitter-tweet {
+  margin: 10px auto !important;
 }
 </style>

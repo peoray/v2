@@ -2,11 +2,12 @@
 title: 'Building my First Project: Number Facts Machine'
 description: 'My experience creating my first ever project!'
 date: 2018-02-08
-slug: '/blog/number-facts-machine'
+slug: 'number-facts-machine'
 path: '/blog/number-facts-machine'
 published: true
 tags: ['Project']
 category: 'Programming'
+image: 'https://res.cloudinary.com/peoray/image/upload/v1528383984/1_wJ-kimDeb6CFX2GrXcmPAA_noqjxe.gif'
 ---
 
 ![gif demo of application](https://res.cloudinary.com/peoray/image/upload/v1528383984/1_wJ-kimDeb6CFX2GrXcmPAA_noqjxe.gif)

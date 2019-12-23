@@ -2,11 +2,12 @@
 title: 'My First #100DaysOfCode Experience'
 description: 'My experience completing my first #100DaysOfCode challenge'
 date: 2018-04-27
-slug: '/blog/100-days-of-code-experience'
+slug: '100-days-of-code-experience'
 path: '/blog/100-days-of-code-experience'
 published: true
 tags: ['100DaysOfCode']
 category: 'Programming'
+image: 'https://res.cloudinary.com/peoray/image/upload/v1557015746/pexels-photo-879109_wmpe8j.jpg'
 ---
 
 ![Code picture](https://res.cloudinary.com/peoray/image/upload/v1557015746/pexels-photo-879109_wmpe8j.jpg)
