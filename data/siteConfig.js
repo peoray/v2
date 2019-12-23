@@ -50,5 +50,5 @@ const config = {
 // // Make sure siteRss has a starting forward slash
 // if (config.siteRss && config.siteRss[0] !== '/') config.siteRss = `/${config.siteRss}`
 
-export default config
-// module.exports = config
+// export default config
+module.exports = config
