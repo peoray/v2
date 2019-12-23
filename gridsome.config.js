@@ -6,7 +6,8 @@
 
 const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
-const config = require('./data/siteConfig')
+// const config = require('./data/siteConfig')
+// import config from './data/siteConfig'
 
 const postcssPlugins = [
   tailwind(),
@@ -15,10 +16,14 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: config.siteTitle,
-  author: config.author,
-  siteDescription: config.siteDescription,
-  siteUrl: config.siteUrl,
+  siteName: 'Emmanuel Raymond',
+  author: 'Emmanuel Raymond',
+  siteDescription: 'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist.',
+  siteUrl: 'https://www.peoray-blog.netlify.com',
+  // siteName: config.siteTitle,
+  // author: config.author,
+  // siteDescription: config.siteDescription,
+  // siteUrl: config.siteUrl,
   plugins: [
     {
       use: '@gridsome/vue-remark',
