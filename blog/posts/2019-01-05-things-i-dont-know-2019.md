@@ -6,7 +6,7 @@ published: true
 slug: "things-I-don't-know"
 path: "/blog/things-I-don't-know"
 tags: ['programming']
-category: 'programming'
+category: 'Programming'
 image: ''
 ---
 

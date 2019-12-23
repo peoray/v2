@@ -3,7 +3,7 @@ const config = {
   siteTitle: 'Emmanuel Raymond',
   author: 'Emmanuel Raymond',
   siteDescription: 'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist who is passionate about making open-source more accessible and building community, online & offline.',
-  siteUrl: 'https://www.peoray.com',
+  siteUrl: 'https://www.peoray-blog.netlify.com',
   userTwitter: '@peoray_',
   repo: 'https://github.com/peoray/peoray.dev',
   dateFromFormat: 'YYYY-MM-DD',

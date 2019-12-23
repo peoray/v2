@@ -15,6 +15,13 @@
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
           <span>{{ post.node.timeToRead }} min read</span>
+          <span> &middot; </span>
+          <span
+            >posted in
+            <a :href="post.node.category.path">{{
+              post.node.category.title
+            }}</a>
+          </span>
         </div>
 
         <div class="text-lg mb-4">
@@ -53,6 +60,10 @@ query Posts ($page: Int) {
         title
         date (format: "MMMM D, Y")
         description
+        category {
+          path
+          title
+        }
         timeToRead
         path
       }

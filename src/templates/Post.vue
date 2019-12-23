@@ -2,15 +2,11 @@
   <Layout>
     <div class="container-inner mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
-      <g-link
-        :to="$page.post.category.path"
-        class="bg-gray-300 rounded-full px-4 py-2 mr-4 hover:bg-green-300"
-      >
-        {{ $page.post.category.title }}
-      </g-link>
-      <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
-      <!-- <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div> -->
 
+      <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
+      <a :href="shareOnTwitter" target="_blank" rel="noopener noreferrer">
+        Share on twitter</a
+      >
       <div class="flex mb-8 text-sm">
         <g-link
           :to="tag.path"
@@ -75,6 +71,7 @@ query Post ($path: String!) {
 import Newsletter from '../components/Newsletter';
 import Bio from '../components/Bio';
 import editOnGithub from '../utils/helpers';
+import config from '../../data/siteConfig';
 export default {
   components: {
     Bio,
@@ -85,6 +82,13 @@ export default {
       const post = this.$page.post;
       const githubLink = editOnGithub(post);
       return githubLink;
+    },
+    shareOnTwitter() {
+      const post = this.$page.post;
+      const twitterShare = `http://twitter.com/share?text=${encodeURIComponent(
+        post.title
+      )}&url=${config.siteUrl}/blog/${post.slug}/&via=peoray_`;
+      return twitterShare;
     }
   },
   metaInfo() {
