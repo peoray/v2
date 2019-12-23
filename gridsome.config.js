@@ -15,10 +15,10 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  // siteName: config.siteTitle,
-  // author: config.author,
-  // siteDescription: config.siteDescription,
-  // siteUrl: config.siteUrl,
+  siteName: config.siteTitle,
+  author: config.author,
+  siteDescription: config.siteDescription,
+  siteUrl: config.siteUrl,
   plugins: [
     {
       use: '@gridsome/vue-remark',
