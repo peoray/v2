@@ -56,6 +56,8 @@ query Post ($path: String!) {
     date (format: "MMMM D, Y")
     slug
     image
+    description
+    path
     content
     tags {
       title
