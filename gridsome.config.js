@@ -6,7 +6,7 @@
 
 const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
-// const config = require('./data/siteConfig')
+const config = require('./data/siteConfig')
 
 const postcssPlugins = [
   tailwind(),
