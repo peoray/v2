@@ -49,7 +49,7 @@ The final code snippet will be provided in a Codepen link at the end of the arti
 
 Your file structure should like this:
 
-```
+```bash
 password-toggle/
 │
 ├── index.html
@@ -156,13 +156,15 @@ We will be using ES6 arrow function to write our function.
 
 First thing, let’s assign the checkbox element tag and save it to a variable:
 
-<pre><code class="language-js">const togglePassword = document.getElementById("togglePassword");</code></pre>
+```js
+const togglePassword = document.getElementById('togglePassword');
+```
 
 The `document.getElementById()` returns a HTML element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.
 
 After assigning the checkbox element to a variable, let’s write our function that will contain the code to make our app work.
 
-```js
+```js{codeTitle: "main.js"}{numberLines: true}
 const showOrHidePassword = () => {
   const password = document.getElementById('password');
   if (password.type === 'password') {

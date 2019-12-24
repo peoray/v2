@@ -4,21 +4,20 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
+const tailwind = require('tailwindcss');
+const purgecss = require('@fullhuman/postcss-purgecss');
 // const config = require('./data/siteConfig')
 // import config from './data/siteConfig'
 
-const postcssPlugins = [
-  tailwind(),
-]
+const postcssPlugins = [tailwind()];
 
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss());
 
 module.exports = {
   siteName: 'Emmanuel Raymond',
   author: 'Emmanuel Raymond',
-  siteDescription: 'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist.',
+  siteDescription:
+    'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist.',
   siteUrl: 'https://www.peoray-blog.netlify.com',
   // siteName: config.siteTitle,
   // author: config.author,
@@ -33,8 +32,11 @@ module.exports = {
         pathPrefix: '/docs', // Add route prefix. Optional
         template: './src/templates/Documentation.vue', // Optional
         plugins: [
-          [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Default', skipInline: true } ]
-      ],
+          [
+            'gridsome-plugin-remark-shiki',
+            { theme: 'Material-Theme-Default', skipInline: true }
+          ]
+        ]
       }
     },
     {
@@ -51,14 +53,6 @@ module.exports = {
             typeName: 'Category',
             create: true
           }
-        },
-        remark: {
-          plugins: [
-            [ '@noxify/gridsome-plugin-remark-embed', {
-                'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'Codepen'],
-                'Codepen': {height: '584'}
-            }]
-          ]
         }
       }
     },
@@ -87,7 +81,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-sitemap',
       options: {
-        cacheTime: 600000, // default
+        cacheTime: 600000 // default
       }
     },
     {
@@ -104,18 +98,36 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Default', skipInline: true } ]
+        // ['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false }],
+        [
+          'gridsome-plugin-remark-prismjs-all',
+          {
+            transformInlineCode: true,
+            prompt: {
+              user: `peoray`,
+              host: `code`,
+              global: false
+            }
+          }
+        ],
+        [
+          '@noxify/gridsome-plugin-remark-embed',
+          {
+            enabledProviders: ['Youtube', 'Twitter', 'Gist', 'Codepen'],
+            Codepen: { height: '584' }
+          }
+        ]
       ],
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
+      anchorClassName: 'icon icon-link'
     }
   },
   css: {
     loaderOptions: {
       postcss: {
-        plugins: postcssPlugins,
-      },
-    },
-  },
-}
+        plugins: postcssPlugins
+      }
+    }
+  }
+};

@@ -4,9 +4,9 @@
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
 
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
-      <a :href="shareOnTwitter" target="_blank" rel="noopener noreferrer">
+      <!-- <a :href="shareOnTwitter" target="_blank" rel="noopener noreferrer">
         Share on twitter</a
-      >
+      > -->
       <div class="flex mb-8 text-sm">
         <g-link
           :to="tag.path"
@@ -18,10 +18,10 @@
         </g-link>
       </div>
       <div class="markdown-body mb-8" v-html="$page.post.content" />
-      <div class="mb-8">
+      <hr />
+      <div class="mb-8 mt-5">
         <p>
-          If youIf you found any errors or typos in this article, please feel
-          free to
+          If you find any error or typo in this article, please feel free to
           <a
             :href="githubLink"
             class="font-bold"
