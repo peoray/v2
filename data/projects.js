@@ -7,7 +7,7 @@ export default [
   },
   {
     title: 'number-facts-machine',
-    path: 'https://taniarascia.github.io/new-moon/',
+    path: 'https://peoray.github.io/number-facts-machine/',
     source: 'https://github.com/peoray/number-facts-machine/',
     description: 'A website where a user inputs either Numbers, Date or Year and a random fact is shown.',
   },
