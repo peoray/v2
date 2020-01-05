@@ -34,7 +34,7 @@ module.exports = {
         // plugins: [
         //   [
         //     'gridsome-plugin-remark-shiki',
-        //     { theme: 'Material-Theme-Default', skipInline: true }
+        //     { theme: 'nord', skipInline: true }
         //   ]
         // ]
       }
@@ -98,18 +98,18 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        // ['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false }],
-        [
-          'gridsome-plugin-remark-prismjs-all',
-          {
-            transformInlineCode: true,
-            prompt: {
-              user: `peoray`,
-              host: `code`,
-              global: false
-            }
-          }
-        ],
+        ['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false }],
+        // [
+        //   'gridsome-plugin-remark-prismjs-all',
+        //   {
+        //     transformInlineCode: true,
+        //     prompt: {
+        //       user: `peoray`,
+        //       host: `code`,
+        //       global: false
+        //     }
+        //   }
+        // ],
         [
           '@noxify/gridsome-plugin-remark-embed',
           {
