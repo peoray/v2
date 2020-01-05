@@ -98,13 +98,13 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        // ['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false }],
-        [
-          'gridsome-plugin-remark-prismjs-all',
-          {
-            transformInlineCode: true
-          }
-        ],
+        ['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false }],
+        // [
+        //   'gridsome-plugin-remark-prismjs-all',
+        //   {
+        //     transformInlineCode: true
+        //   }
+        // ],
         [
           '@noxify/gridsome-plugin-remark-embed',
           {
