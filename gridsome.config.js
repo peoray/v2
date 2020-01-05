@@ -31,12 +31,12 @@ module.exports = {
         baseDir: './docs', // Where .md files are located
         pathPrefix: '/docs', // Add route prefix. Optional
         template: './src/templates/Documentation.vue', // Optional
-        plugins: [
-          [
-            'gridsome-plugin-remark-shiki',
-            { theme: 'Material-Theme-Default', skipInline: true }
-          ]
-        ]
+        // plugins: [
+        //   [
+        //     'gridsome-plugin-remark-shiki',
+        //     { theme: 'Material-Theme-Default', skipInline: true }
+        //   ]
+        // ]
       }
     },
     {
