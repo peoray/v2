@@ -31,12 +31,12 @@ module.exports = {
         baseDir: './docs', // Where .md files are located
         pathPrefix: '/docs', // Add route prefix. Optional
         template: './src/templates/Documentation.vue', // Optional
-        // plugins: [
-        //   [
-        //     'gridsome-plugin-remark-shiki',
-        //     { theme: 'nord', skipInline: true }
-        //   ]
-        // ]
+        plugins: [
+          //   [
+          //     'gridsome-plugin-remark-shiki',
+          //     { theme: 'nord', skipInline: true }
+          //   ]
+        ]
       }
     },
     {
@@ -98,13 +98,12 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        ['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: false }],
-        // [
-        //   'gridsome-plugin-remark-prismjs-all',
-        //   {
-        //     transformInlineCode: true
-        //   }
-        // ],
+        [
+          'gridsome-plugin-remark-prismjs-all',
+          {
+            transformInlineCode: true
+          }
+        ],
         [
           '@noxify/gridsome-plugin-remark-embed',
           {
