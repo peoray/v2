@@ -11,7 +11,8 @@ const purgecss = require('@fullhuman/postcss-purgecss');
 
 const postcssPlugins = [tailwind()];
 
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss());
+// if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss());
+// if (process.env.NODE_ENV === 'development') postcssPlugins.push(purgecss());
 
 module.exports = {
   siteName: 'Emmanuel Raymond',
