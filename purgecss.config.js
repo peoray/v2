@@ -24,10 +24,12 @@ module.exports = {
     'g-image--lazy',
     'g-image--loaded',
     'active',
-    '/^token/',
-    '/^pre/',
-    '/^code/'
+    'tokens',
+    'language',
+    'pre',
+    'code'
   ],
+  whitelistPatterns: [/^token/, /^pre/, /^code/, /^language/],
   extractors: [
     {
       extractor: TailwindExtractor,

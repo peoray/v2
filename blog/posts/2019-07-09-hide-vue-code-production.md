@@ -6,13 +6,13 @@ published: true
 slug: 'hide-vue-code-production'
 path: '/blog/hide-vue-code-in-production'
 tags: ['vue', 'webpack']
-category: 'Web development'
+category: 'Web Development'
 image: ''
 ---
 
 If you have ever created your Vue project using the Vue CLI and deployed to production before, chances are you might not know that your whole code is visible on the devtools.
 
-If you go to developer tools > Sources in Chrome or developer tools > debugger in Mozilla, then under webpack:// you can see the whole code under the `src` directory. That's because webpack generates source maps which show the original source code and structure.
+If you go to **developer tools > Sources in Chrome or developer tools > debugger** in Mozilla, then under `webpack://`, you can see the whole code under the `src` directory. That's because webpack generates source maps which show the original source code and structure.
 
 Now, if you are building a personal project, maybe for learning purposes or as open source, this might not bother you, but if this is an application that real users will use and might contain sensitive data, then it's risky.
 

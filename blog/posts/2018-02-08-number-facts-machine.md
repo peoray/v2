@@ -5,8 +5,8 @@ date: 2018-02-08
 slug: 'number-facts-machine'
 path: '/blog/number-facts-machine'
 published: true
-tags: ['Project']
-category: 'Programming'
+tags: ['project']
+category: 'Web Development'
 image: 'https://res.cloudinary.com/peoray/image/upload/v1528383984/1_wJ-kimDeb6CFX2GrXcmPAA_noqjxe.gif'
 ---
 

@@ -19,7 +19,7 @@ module.exports = {
   author: 'Emmanuel Raymond',
   siteDescription:
     'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist.',
-  siteUrl: 'https://www.peoray-blog.netlify.com',
+  siteUrl: 'https://www.peoray.dev',
   // siteName: config.siteTitle,
   // author: config.author,
   // siteDescription: config.siteDescription,
@@ -62,15 +62,15 @@ module.exports = {
       options: {
         contentTypeName: 'Post',
         feedOptions: {
-          title: 'Gridsome Portfolio Starter Blog',
-          feed_url: 'https://gridsome-portfolio-starter.netlify.com/rss.xml',
-          site_url: 'https://gridsome-portfolio-starter.netlify.com/'
+          title: 'Emmanuel Raymond',
+          feed_url: 'https://peoray.dev/rss.xml',
+          site_url: 'https://peoray.dev/'
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.description,
-          url: 'https://gridsome-portfolio-starter.netlify.com' + node.path,
-          author: 'Andre Madarang',
+          url: 'https://peoray.dev' + node.path,
+          author: 'Emmanuel Raymond',
           date: node.date
         }),
         output: {

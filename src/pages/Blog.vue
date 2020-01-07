@@ -77,7 +77,27 @@ import PaginationPosts from '../components/PaginationPosts';
 
 export default {
   metaInfo: {
-    title: 'Blog'
+    title: 'Blog',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist.'
+      },
+      //twitter cards
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        name: 'twitter:description',
+        content:
+          'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist.'
+      },
+      { name: 'twitter:title', content: 'Home - Emmanuel Raymond' },
+      { name: 'twitter:site', content: 'https://www.peoray.dev' }
+    ],
+    htmlAttrs: {
+      lang: 'en',
+      amp: true
+    }
   },
   components: {
     PaginationPosts

@@ -46,7 +46,7 @@
 query Category ($id: ID!, $page: Int) {
   category: category (id: $id) {
     title
-    belongsTo (page: $page, perPage: 3) @paginate {
+    belongsTo (page: $page, perPage: 10) @paginate {
       totalCount
       pageInfo {
         totalPages

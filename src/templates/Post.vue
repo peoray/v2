@@ -133,8 +133,7 @@ export default {
         },
         {
           name: 'twitter:url',
-          content:
-            'https://peoray-blog.netlify.com/blog/' + this.$page.post.path
+          content: 'https://peoray.dev/blog/' + this.$page.post.path
         },
         {
           name: 'twitter:image',
@@ -152,7 +151,7 @@ export default {
         },
         {
           property: 'og:url',
-          cotent: 'https://peoray-blog.netlify.com/blog/' + this.$page.post.path
+          cotent: 'https://peoray.dev/blog/' + this.$page.post.path
         },
         {
           property: 'og:type',

@@ -1,11 +1,11 @@
 ---
-title: 'I asked my first StackOverflow question '
+title: 'I Asked my First StackOverflow Question '
 description: 'A first timer’s experience on StackOverflow'
 date: 2018-05-18
 published: true
 slug: 'first-stackoverflow-question'
 path: '/blog/first-stackoverflow-question'
-tags: ['StackOverflow']
+tags: ['stackoverflow']
 category: 'Programming'
 image: ''
 ---

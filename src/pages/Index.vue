@@ -41,7 +41,7 @@ export default {
           'Personal website for Emmanuel Raymond, a software engineer, writer and hobbyist guitarist.'
       },
       { name: 'twitter:title', content: 'Home - Emmanuel Raymond' },
-      { name: 'twitter:site', content: 'https://www.peoray-blog.netlify.com' }
+      { name: 'twitter:site', content: 'https://www.peoray.dev' }
     ],
     htmlAttrs: {
       lang: 'en',

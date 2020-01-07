@@ -1,12 +1,12 @@
 ---
-title: 'How to run multiple npm scripts'
+title: 'How to Run Multiple NPM Scripts Using concurrently'
 description: 'How to use concurrently to run multiple npm scripts with a single script'
 date: 2019-06-12T12:50:03+01:00
 published: true
 slug: 'using-concurrently'
 path: '/blog/using-concurrently'
 tags: ['npm', 'concurrently', 'react', 'node']
-category: 'Web development'
+category: 'Web Development'
 image: ''
 ---
 

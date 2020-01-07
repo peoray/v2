@@ -5,7 +5,7 @@ description: 'My very first article :)'
 slug: 'hello-world'
 path: '/blog/hello-world'
 published: true
-tags: ['Blogging']
+tags: ['blogging']
 category: 'Personal'
 image: '../images/hello-world/hello_world.jpg'
 ---
