@@ -1,9 +1,12 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-require("prismjs/themes/prism.css")
+// require("prismjs/themes/prism.css")
+require('./css/prism.css')
+// require('prismjs/themes/prism-twilight.css');
 require("prismjs/plugins/line-numbers/prism-line-numbers.css")
 require("prismjs/plugins/command-line/prism-command-line.css");
+// require('prismjs/themes/prism-tomorrow.css');
 
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
