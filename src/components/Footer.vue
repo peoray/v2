@@ -12,6 +12,12 @@
             class="text-white hover:text-gray-400 font-normal underline"
             target="_blank"
             >Gridsome</a
+          >, deployed on
+          <a
+            href="https://www.netlify.com/"
+            class="text-white hover:text-gray-400 font-normal underline"
+            target="_blank"
+            >Netlify</a
           >
         </div>
         <div>

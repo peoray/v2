@@ -5,7 +5,7 @@ date: 2018-07-20
 published: true
 slug: 'display-password-form-input'
 path: '/blog/display-password-form-input'
-tags: [javascript']
+tags: ['javascript']
 category: 'Web Development'
 image: '../images/password/preview.jpg'
 ---
