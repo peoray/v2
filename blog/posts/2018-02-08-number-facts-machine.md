@@ -7,14 +7,14 @@ path: '/blog/number-facts-machine'
 published: true
 tags: ['project']
 category: 'Web Development'
-image: 'https://res.cloudinary.com/peoray/image/upload/v1528383984/1_wJ-kimDeb6CFX2GrXcmPAA_noqjxe.gif'
+image: 'https://res.cloudinary.com/peoray/image/upload/v1530117604/nfm_zqyxkg.gif'
 ---
 
-![gif demo of application](https://res.cloudinary.com/peoray/image/upload/v1528383984/1_wJ-kimDeb6CFX2GrXcmPAA_noqjxe.gif)
+![gif demo of application](https://res.cloudinary.com/peoray/image/upload/v1530117604/nfm_zqyxkg.gif)
 
 **UPDATE: I finally managed to host the app thanks to The Shalvah**
 
-[Check out the app here](https://peoray.github.io/Number-Facts-Machine/)
+Check out the app: [code](https://www.github.com/peoray/number-facts-machine/) | [view](https://peoray.github.io/number-facts-machine/)
 
 This is the first ever project I completed and I got the inspiration from [Brad Traversy YouTube video](https://www.youtube.com/watch?v=tUE2Nic21BA&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&index=17). I decided to add my own features and include options for both year and date request.
 

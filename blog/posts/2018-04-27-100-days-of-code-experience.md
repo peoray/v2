@@ -7,7 +7,7 @@ path: '/blog/100-days-of-code-experience'
 published: true
 tags: ['100daysofcode']
 category: 'Programming'
-image: 'https://res.cloudinary.com/peoray/image/upload/v1557015746/pexels-photo-879109_wmpe8j.jpg'
+image: '../images/100x-code-exp/header.jpg'
 ---
 
 ![Code picture](https://res.cloudinary.com/peoray/image/upload/v1557015746/pexels-photo-879109_wmpe8j.jpg)
