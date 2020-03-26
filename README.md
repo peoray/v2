@@ -1,4 +1,4 @@
-# peoray.com
+# peoray.dev
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/bf17b87d-544b-4f62-9692-33dc15b6d873/deploy-status)](https://app.netlify.com/sites/peoray/deploys)
 
