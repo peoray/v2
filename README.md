@@ -4,6 +4,8 @@
 
 My personal website and blog running on Gridsome, Vue and Node.js :)
 
+This is now archived as I have now moved on to a new technology. You can find the current version [here](https://github.com/peoray/peoray.dev/)
+
 ## Features
 
 - Clean and minimal design
@@ -22,7 +24,7 @@ My personal website and blog running on Gridsome, Vue and Node.js :)
 
 ## Acknowledgements
 
-- The theme is made by [Andre Madarang](https://github.com/drehimself/gridsome-portfolio-starter/). Full credit goes to him. I only tweaked, edited and added the functionalities I wanted.
+This theme is made by [Andre Madarang](https://github.com/drehimself/gridsome-portfolio-starter/). Full credit goes to him. I only tweaked, edited and added the functionalities I wanted.
 
 ## Installation
 
@@ -34,7 +36,7 @@ My personal website and blog running on Gridsome, Vue and Node.js :)
 
 ## Author
 
-Emmanuel Raymond - [Twitter](https://www.teitter.com/peoray_)
+Emmanuel Raymond - [Twitter](https://www.twitter.com/peoray_)
 
 ## License
 
