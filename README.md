@@ -26,14 +26,6 @@ This is now archived as I have now moved on to a new technology. You can find th
 
 This theme is made by [Andre Madarang](https://github.com/drehimself/gridsome-portfolio-starter/). Full credit goes to him. I only tweaked, edited and added the functionalities I wanted.
 
-## Installation
-
-1. Install Gridsome CLI tool if you don't have it: `npm install --global @gridsome/cli`
-1. Clone the repo: `git clone https://github.com/drehimself/gridsome-portfolio-starter.git`
-1. `cd gridsome-portfolio-starter`
-1. `npm install`
-1. `gridsome develop` to start a local dev server at `http://localhost:8080`
-
 ## Author
 
 Emmanuel Raymond - [Twitter](https://www.twitter.com/peoray_)
